@@ -39,7 +39,9 @@
 
                 el = tags[i];  
 
-                var hasNoValue = (el.currentStyle[scriptName] == 'none');
+                if (hasNoValue) {
+                    var hasNoValue = (el.currentStyle[scriptName] == 'none');
+                }
                 if (hasNoValue) continue;
 
                 rtn.push(el);
